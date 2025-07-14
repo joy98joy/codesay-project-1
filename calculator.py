@@ -1,17 +1,17 @@
-NumFirst = input("Enter number: ")
-Operator = input("Enter operator(+, -, *, /): ")
-NumSecond= input("Enter number: ")
+
 def calculator():
-
+  NumFirst = input("Enter number: ")
+  Operator = input("Enter operator(+, -, *, /): ")
+  NumSecond= input("Enter number: ")
   
-  try:
-    NumFirst = int(NumFirst)
-    NumSecond = int(NumSecond)
+  
+  NumFirst = int(NumFirst)
+  NumSecond = int(NumSecond)
 
-  except NumSecond == 0:
-    print("Error: Division by zero.")
-  exit()
-
+  if NumSecond == 0:
+    return print("Error: Division by zero.")
+  #finsh
+  
   def add(NumFirst, NumSecond):
     return NumFirst + NumSecond
   def subtract(NumFirst, NumSecond):
@@ -20,7 +20,7 @@ def calculator():
     return NumFirst * NumSecond
   def divide(NumFirst, NumSecond):
     return NumFirst / NumSecond
-  if Operator not in ['+', '-', '*', '/']:
+  if Operator not in ['+', '-', '*', '/']:    
     return print("Invalid operator.")
   
   elif Operator == '+':
@@ -34,38 +34,6 @@ def calculator():
 
   return print(f"Result: {result}")
 
-calculator()
-  
-  
 
-
-
-
-
-
-  # def calculate(NumFirst, Operator, NumSecond):
-  #     try:
-  #         NumFirst = float(NumFirst)
-  #         NumSecond = float(NumSecond)
-  #     except ValueError:
-  #         return print("Invalid input. Please enter numeric values.")
-
-  #     if Operator == '+':
-  #         return NumFirst + NumSecond
-  #     elif Operator == '-':
-  #         return NumFirst - NumSecond
-  #     elif Operator == '*':
-  #         return NumFirst * NumSecond
-  #     elif Operator == '/':
-  #         if NumSecond == 0:
-  #             return print("Error: Division by zero.")
-  #         return NumFirst / NumSecond
-  #     else:
-  #         return print("Invalid operator. Please use +, -, *, or /.")
-    
-    
-
-
-
-
-  # if __name__ == "__main__":
+if __name__ == "__main__":
+  calculator()
